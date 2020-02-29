@@ -1,0 +1,16 @@
+spring:
+  profiles: "local"
+  
+  jpa:
+      hibernate:
+        ddl-auto: "create"
+  datasource:
+          url: "jdbc:oracle:thin:@localhost:1521:xe"
+          username: "system"
+          password: "password"
+          driver-class-name: "oracle.jdbc.driver.OracleDriver"
+
+server:
+  tomcat:
+    max-connections: 10000
+    max-threads: 200
